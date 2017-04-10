@@ -1,0 +1,8 @@
+{
+  "name": "activite",
+  "version": "1.0.0",
+  "dependencies": {
+    "bower": "^1.8.0"
+  },
+  "devDependencies": {}
+}

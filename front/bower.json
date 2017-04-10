@@ -1,0 +1,14 @@
+{
+  "name": "Activite",
+  "homepage": "https://github.com/swcraftlyon/meetup",
+  "description": "",
+  "main": "index.html",
+  "keywords": [
+    "polymer"
+  ],
+  "license": "Apache 2.0",
+  "dependencies": {
+    "iron-elements": "PolymerElements/iron-elements#^1.0.10",
+    "paper-elements": "PolymerElements/paper-elements#^1.0.7"
+  }
+}
