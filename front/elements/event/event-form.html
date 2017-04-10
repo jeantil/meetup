@@ -1,0 +1,42 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/paper-styles/typography.html">
+<link rel="import" href="../../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../../bower_components/paper-input/paper-textarea.html">
+<link rel="import" href="../../bower_components/paper-date-picker-item/paper-date-picker-item.html">
+
+<dom-module id="event-form">
+    <template>
+    <style include="shared-styles">
+      :host {
+        display: block;        
+      }      
+      #description{
+        --paper-input-container-input: {
+          min-height: 100px;
+        }
+      }
+      span,
+      input {
+        @apply(--paper-font-body2);
+      }
+    </style>
+
+    <!--<h1 class="page-title" tabindex="-1">{{greeting}}</h1>    -->
+    <!-- Listens for "input" event and sets greeting to <input>.value -->
+    <paper-date-picker-item icon="icons:today" date="{{date}}" date-format="ll"></paper-date-picker-item>
+    
+    <paper-input id="title" label="Title" required></paper-input>    
+    <paper-input id="location" label="Location"></paper-input>
+    <paper-textarea id="description" label="Description"></paper-textarea>
+    
+  </template>
+
+    <script>
+        (function() {
+            'use strict';
+            Polymer({
+                is: 'event-form'
+            });
+        })();
+    </script>
+</dom-module>
